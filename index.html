@@ -3,10 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="theme-color" content="#f4f1ea" />
+    <meta name="theme-color" content="#ffffff" />
     <meta
       name="description"
-      content="Li Siqi is an aerospace engineering undergraduate researching robot perception, visual localization, and autonomous systems."
+      content="Li Siqi is an aerospace engineering undergraduate researching computer vision, robotics, visual localization, and autonomous systems."
     />
     <meta property="og:type" content="website" />
     <meta property="og:title" content="Li Siqi — Academic Homepage" />
@@ -19,7 +19,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,600&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
@@ -28,126 +28,131 @@
     <a class="skip-link" href="#main">Skip to content</a>
 
     <header class="site-header">
-      <div class="header-inner">
-        <a class="wordmark" href="#top" aria-label="Back to top">
-          <span class="wordmark-dot"></span>
-          <span id="nav-name">Li Siqi</span>
-        </a>
-
+      <div class="header-inner page-width">
+        <a class="site-name" href="#top" aria-label="Back to top" id="nav-name">Li Siqi</a>
         <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
-          <span></span><span></span>
-          <span class="sr-only">Open menu</span>
+          <span></span><span></span><span class="sr-only">Open menu</span>
         </button>
-
         <nav id="site-nav" class="site-nav" aria-label="Primary navigation">
-          <a href="#about">About</a>
+          <a href="#top">Home</a>
           <a href="#research">Research</a>
-          <a href="#publications">Publications</a>
-          <a href="#projects">Projects</a>
+          <a href="#experience">Experience</a>
+          <a href="#publications">Patent</a>
+          <a href="#honors">Awards</a>
           <a href="#contact">Contact</a>
         </nav>
       </div>
     </header>
 
-    <main id="main">
-      <section id="top" class="hero section-shell">
-        <div class="hero-copy reveal">
-          <p id="hero-eyebrow" class="eyebrow">Researcher · Engineer · Lifelong learner</p>
-          <h1>
-            Hi, I’m <em id="hero-name">Li Siqi</em>.<br />
-            <span id="hero-headline">I explore ideas and build useful things.</span>
-          </h1>
-          <p id="hero-intro" class="hero-intro">
-            A short introduction about your research interests, current position, and the questions
-            you care about most.
-          </p>
-          <div id="hero-links" class="hero-actions"></div>
-        </div>
-
-        <div class="portrait-wrap reveal" aria-label="Profile image placeholder">
+    <main id="main" class="page-width">
+      <section id="top" class="profile-section">
+        <div class="portrait-column">
           <div class="portrait-frame">
-            <img id="profile-photo" alt="Portrait" hidden />
-            <span id="profile-initials" class="portrait-initials">YN</span>
-            <span class="portrait-label">Portrait / 01</span>
+            <img id="profile-photo" alt="Li Siqi portrait" hidden />
+            <span id="profile-initials" class="portrait-initials">LS</span>
           </div>
-          <p id="hero-status" class="availability"><span></span> Open to collaboration</p>
+        </div>
+
+        <div class="profile-content">
+          <h1><span id="hero-name">Li Siqi</span> <span id="chinese-name" lang="zh-CN">李思齐</span></h1>
+          <p id="profile-role" class="profile-role">Undergraduate Student</p>
+          <p id="profile-affiliation" class="profile-affiliation">
+            School of Aeronautics<br />Northwestern Polytechnical University
+          </p>
+
+          <div class="profile-detail">
+            <strong>Research Interests:</strong>
+            <div id="ticker-content" class="interest-list"></div>
+          </div>
+
+          <div id="hero-links" class="profile-links"></div>
+          <p id="hero-status" class="profile-status">Open to research opportunities</p>
+
+          <div class="biography">
+            <p id="hero-intro">
+              I am an aerospace engineering undergraduate researching robot perception, visual
+              localization, and intelligent autonomous systems.
+            </p>
+            <div id="about-text"></div>
+          </div>
         </div>
       </section>
 
-      <section class="ticker" aria-label="Research interests">
-        <div id="ticker-content" class="ticker-track"></div>
+      <section id="education" class="academic-section">
+        <div class="section-title">
+          <p>Background</p>
+          <h2>Education</h2>
+        </div>
+        <div id="quick-facts" class="section-content education-list"></div>
       </section>
 
-      <section id="about" class="content-section section-shell">
-        <div class="section-heading reveal">
-          <p class="section-number">01 / About</p>
-          <h2>A little about<br /><em>my journey.</em></h2>
+      <section id="research" class="academic-section">
+        <div class="section-title">
+          <p>Focus</p>
+          <h2>Research Interests</h2>
         </div>
-        <div class="section-body about-grid reveal">
-          <div id="about-text" class="about-copy"></div>
-          <dl id="quick-facts" class="quick-facts"></dl>
-        </div>
+        <div id="research-list" class="section-content research-list"></div>
       </section>
 
-      <section id="research" class="content-section section-shell">
-        <div class="section-heading reveal">
-          <p class="section-number">02 / Research</p>
-          <h2>Questions I’m<br /><em>exploring.</em></h2>
+      <section id="experience" class="academic-section">
+        <div class="section-title">
+          <p>Selected Work</p>
+          <h2>Research Experience</h2>
         </div>
-        <div id="research-list" class="research-list section-body"></div>
+        <div id="project-grid" class="section-content experience-list"></div>
       </section>
 
-      <section id="publications" class="content-section section-shell">
-        <div class="section-heading reveal">
-          <p class="section-number">03 / Publications</p>
-          <h2>Selected<br /><em>output.</em></h2>
+      <section id="publications" class="academic-section">
+        <div class="section-title">
+          <p>Research Output</p>
+          <h2>Patent</h2>
         </div>
-        <div class="section-body">
-          <div class="publication-toolbar reveal">
-            <p>Research output and intellectual property. <span id="publication-note">Granted invention patent.</span></p>
-            <a id="all-publications-link" class="text-link" href="#">View all <span>↗</span></a>
+        <div class="section-content">
+          <div class="publication-toolbar">
+            <p id="publication-note">Granted invention patent.</p>
+            <a id="all-publications-link" href="#publications" hidden>View all</a>
           </div>
           <ol id="publication-list" class="publication-list"></ol>
         </div>
       </section>
 
-      <section id="projects" class="content-section section-shell">
-        <div class="section-heading reveal">
-          <p class="section-number">04 / Projects</p>
-          <h2>Things I’ve<br /><em>built.</em></h2>
+      <section id="honors" class="academic-section">
+        <div class="section-title">
+          <p>Recognition</p>
+          <h2>Selected Honors & Awards</h2>
         </div>
-        <div id="project-grid" class="project-grid section-body"></div>
-      </section>
-
-      <section id="news" class="content-section section-shell">
-        <div class="section-heading reveal">
-          <p class="section-number">05 / News</p>
-          <h2>Recent<br /><em>notes.</em></h2>
-        </div>
-        <div class="section-body">
-          <ul id="news-list" class="news-list"></ul>
+        <div class="section-content">
+          <ul id="news-list" class="honors-list"></ul>
         </div>
       </section>
 
-      <section id="contact" class="contact-section">
-        <div class="section-shell contact-inner reveal">
-          <p class="section-number">06 / Contact</p>
-          <h2>Have an interesting idea?<br /><em>Let’s talk.</em></h2>
+      <section id="skills" class="academic-section">
+        <div class="section-title">
+          <p>Expertise</p>
+          <h2>Technical Skills</h2>
+        </div>
+        <div id="skills-list" class="section-content skills-list"></div>
+      </section>
+
+      <section id="contact" class="academic-section contact-section">
+        <div class="section-title">
+          <p>Get in Touch</p>
+          <h2>Contact</h2>
+        </div>
+        <div class="section-content contact-content">
           <p id="contact-text">
-            I’m always happy to discuss research, collaboration, or thoughtful new projects.
+            I am interested in research opportunities and collaborations in computer vision and robotics.
           </p>
-          <a id="contact-email" class="contact-email" href="mailto:lisiqi_@mail.nwpu.edu.cn">
-            lisiqi_@mail.nwpu.edu.cn <span>↗</span>
-          </a>
+          <a id="contact-email" href="mailto:lisiqi_@mail.nwpu.edu.cn">lisiqi_@mail.nwpu.edu.cn</a>
         </div>
       </section>
     </main>
 
     <footer class="site-footer">
-      <div class="footer-inner section-shell">
+      <div class="footer-inner page-width">
         <p>© <span id="footer-year"></span> <span id="footer-name">Li Siqi</span></p>
         <div id="footer-links" class="footer-links"></div>
-        <a href="#top" class="back-to-top">Back to top ↑</a>
+        <a href="#top">Back to top ↑</a>
       </div>
     </footer>
 
