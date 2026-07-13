@@ -28,7 +28,7 @@ const PROFILE = {
 
   // About
   about: [
-    "I am Li Siqi (李思齐), an undergraduate in Aerospace Engineering at the School of Aeronautics, Northwestern Polytechnical University. I hold a GPA of 3.933/4.1, ranking 5th among 344 students, with a comprehensive assessment rank of 1st among 252 students.",
+    "I am Li Siqi (李思齐), an undergraduate in Aerospace Engineering at the School of Aeronautics, Northwestern Polytechnical University.",
     "My work sits at the intersection of computer vision, robotics, and navigation. I enjoy turning research ideas into reliable systems using Python, C++, MATLAB, PyTorch, TensorFlow, and OpenCV.",
   ],
   facts: [
@@ -36,11 +36,6 @@ const PROFILE = {
       label: "Undergraduate",
       value: "Northwestern Polytechnical University",
       detail: "B.Eng. candidate in Aerospace Engineering · School of Aeronautics",
-    },
-    {
-      label: "Academic Record",
-      value: "GPA 3.933/4.1 · Rank 5/344",
-      detail: "Comprehensive assessment rank: 1/252",
     },
   ],
 
